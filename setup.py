@@ -1,5 +1,5 @@
 from setuptools import setup
-package_name = 'security_monitor'
+package_name = 'speech_control'
 setup(
     name=package_name,
     version='0.0.0',
@@ -8,12 +8,12 @@ setup(
     zip_safe=True,
     maintainer='VotreNom',
     maintainer_email='votre-email@example.com',
-    description='Surveillance de la sécurité et détection des anomalies',
+    description='Contrôle vocal pour la gestion des mots de passe',
     license='Licence',
     entry_points={
         'console_scripts': [
-            'security_monitor = security_monitor.security_monitor:main',
-            'anomaly_alarm = security_monitor.anomaly_alarm:main',
+            'speech_recognizer = speech_control.speech_recognizer:main',
+            'speech_executor = speech_control.speech_executor:main',
         ],
     },
 )
